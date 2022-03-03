@@ -1,5 +1,8 @@
 // MEDIA QUERY
 @mixin mq($breakpoint) {
+  @if $breakpoint == phone {
+    @content;
+  }
   @if $breakpoint == tablet {
     @media only screen and (min-width: 48em) {
       @content;
