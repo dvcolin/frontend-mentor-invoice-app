@@ -1,0 +1,72 @@
+$violetsAreBlue: #7c5dfa;
+$violetsAreBlue--light: #9277ff;
+$eucalyptus: #33d69f;
+$eucalyptus--light: rgba($eucalyptus, 0.0571);
+$darkOrange: #ff8f00;
+$darkOrange--light: rgba($darkOrange, 0.0571);
+$fireOpal: #ec5757;
+$fireOpal--light: #ff9797;
+$white: #ffffff;
+$ghostWhite: #f8f8fb;
+$ghostWhite-2: #f9fafe;
+$charcoal: #373b53;
+$coolGrey: #888eb0;
+$ube: #7e88c3;
+$chineseBlack: #0c0e16;
+$eerieBlack: #141625;
+$yankeesBlue: #1e2139;
+$yankeesBlue-2: #252945;
+$lavenderWeb: #dfe3fa;
+$independence: #494e6e;
+
+$main-colors: (
+  primary: $violetsAreBlue,
+  primary--light: $violetsAreBlue--light,
+  pending-bg: $darkOrange--light,
+  pending-text: $darkOrange,
+  success-bg: $eucalyptus--light,
+  success-text: $eucalyptus,
+  icon: $ube,
+  primary-button-text: $white,
+  button-4-bg: $charcoal,
+  delete-button-bg: $fireOpal,
+  delete-button-bg--hover: $fireOpal--light,
+  button-6-bg: $ghostWhite-2,
+  button-6-bg--hover: $lavenderWeb,
+  button-6-text: $ube,
+  divider: $independence,
+);
+
+$light-theme-colors: (
+  body-bg: $ghostWhite,
+  body-text: $coolGrey,
+  navbar-bg: $charcoal,
+  heading: $chineseBlack,
+  label-text: $ube,
+  main-component-bg: $white,
+  secondary-component-bg: $charcoal,
+  input-border: $lavenderWeb,
+  input-border--active: $violetsAreBlue--light,
+  button-3-bg: $ghostWhite-2,
+  button-3-bg--hover: $lavenderWeb,
+  button-3-text: $ube,
+  button-4-bg--hover: $chineseBlack,
+  button-4-text: $coolGrey,
+);
+
+$dark-theme-colors: (
+  body-bg: $eerieBlack,
+  body-text: $lavenderWeb,
+  navbar-bg: $yankeesBlue,
+  heading: $white,
+  label-text: $lavenderWeb,
+  main-component-bg: $yankeesBlue,
+  secondary-component-bg: $chineseBlack,
+  input-border: $yankeesBlue-2,
+  input-border--active: $yankeesBlue-2,
+  button-3-bg: $yankeesBlue-2,
+  button-3-bg--hover: $white,
+  button-3-text: $lavenderWeb,
+  button-4-bg--hover: $chineseBlack,
+  button-4-text: $lavenderWeb,
+);

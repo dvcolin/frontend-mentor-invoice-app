@@ -1,0 +1,55 @@
+// FONT FAMILIES
+$font-families: (
+  body: "Spartan, sans-serif",
+);
+
+// FONT WEIGHTS
+$font-weights: (
+  medium: 500,
+  bold: 700,
+);
+
+// FONT SIZES
+$font-sizes: (
+  phone: (
+    h1: 2rem,
+    h2: 2rem,
+    h3: 1.2rem,
+    h3--small: 1.2rem,
+    body: 1.2rem,
+    body--small: 1.2rem,
+  ),
+  tablet: (
+    h1: 3.2rem,
+    h3: 1.6rem,
+  ),
+  desktop: (
+    body--small: 1.1rem,
+  ),
+);
+
+// LINE HEIGHTS
+$line-heights: (
+  h1: 1.125,
+  h2: 1.1,
+  h3: 1.5,
+  h3--small: 1.25,
+  body: 1.25,
+  body--small: 1.636,
+);
+
+// LETTER SPACING
+$letter-spacings: (
+  phone: (
+    h1: -0.063rem,
+    h2: -0.063rem,
+    h3: -0.025rem,
+    h3--small: -0.025rem,
+    body: -0.025rem,
+    body--small: -0.023rem,
+  ),
+  tablet: (
+    h1: -0.1rem,
+    h3: -0.08rem,
+  ),
+);

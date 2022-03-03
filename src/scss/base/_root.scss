@@ -1,0 +1,80 @@
+@use "../abstracts" as *;
+
+:root,
+:root[data-theme="light"] {
+  // FONT FAMILIES
+  @each $name, $value in $font-families {
+    --font-family-#{$name}: #{$value};
+  }
+
+  // FONT WEIGHTS
+  @each $name, $value in $font-weights {
+    --font-weight-#{$name}: #{$value};
+  }
+
+  // FONT SIZES
+  @each $breakpoint, $values in $font-sizes {
+    @if $breakpoint == phone {
+      @each $name, $value in $values {
+        --font-size-#{$name}: #{$value};
+      }
+    }
+    @if $breakpoint == tablet {
+      @include mq(tablet) {
+        @each $name, $value in $values {
+          --font-size-#{$name}: #{$value};
+        }
+      }
+    }
+    @if $breakpoint == desktop {
+      @include mq(desktop) {
+        @each $name, $value in $values {
+          --font-size-#{$name}: #{$value};
+        }
+      }
+    }
+  }
+
+  // LINE HEIGHTS
+  @each $name, $value in $line-heights {
+    --line-height-#{$name}: #{$value};
+  }
+
+  // LETTER SPACING
+  @each $breakpoint, $values in $letter-spacings {
+    @if $breakpoint == phone {
+      @each $name, $value in $values {
+        --letter-spacing-#{$name}: #{$value};
+      }
+    }
+    @if $breakpoint == tablet {
+      @include mq(tablet) {
+        @each $name, $value in $values {
+          --letter-spacing-#{$name}: #{$value};
+        }
+      }
+    }
+  }
+
+  // SPACING
+  @for $i from 0 through 24 {
+    --space-#{$i}: #{$i * 0.4}rem;
+  }
+
+  // MAIN COLORS
+  @each $name, $value in $main-colors {
+    --color-#{$name}: #{$value};
+  }
+
+  // LIGHT THEME COLORS
+  @each $name, $value in $light-theme-colors {
+    --color-#{$name}: #{$value};
+  }
+}
+
+:root[data-theme="dark"] {
+  // DARK THEME COLORS
+  @each $name, $value in $dark-theme-colors {
+    --color-#{$name}: #{$value};
+  }
+}
