@@ -1,3 +1,19 @@
+@use "../../../scss/abstracts" as *;
+
 .layout {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  @include mq(desktop) {
+    flex-direction: row;
+  }
+}
+
+.main {
+  flex: 1;
+
+  @include mq(desktop) {
+    padding-left: 10.3rem;
+  }
 }

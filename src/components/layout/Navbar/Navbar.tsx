@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ReactComponent as Logo } from "../../../assets/logo.svg";
+import logo from "../../../assets/logo.svg";
 import { ReactComponent as MoonIcon } from "../../../assets/icon-moon.svg";
 import profileImage from "../../../assets/image-avatar.jpg";
 import styles from "./Navbar.module.scss";
@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className={styles.navbar}>
       <Link to="/">
         <div className={styles.logoBox}>
-          <Logo className={styles.logo} />
+          <img className={styles.logo} src={logo} alt="Logo" />
           <div className={styles.logoBoxAccent} />
         </div>
       </Link>
