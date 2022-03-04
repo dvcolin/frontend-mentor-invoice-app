@@ -2,11 +2,14 @@
 
 .navbar {
   position: sticky;
+  top: var(--space-0);
+  left: var(--space-0);
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 7.2rem;
   background-color: var(--color-navbar-bg);
+  z-index: 100;
 
   @include mq(tablet) {
     height: 8rem;

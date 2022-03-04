@@ -5,6 +5,17 @@ import profileImage from "../../../assets/image-avatar.jpg";
 import styles from "./Navbar.module.scss";
 
 const Navbar = () => {
+  const toggleTheme = () => {
+    const root = document.documentElement;
+    const theme = localStorage.getItem("theme");
+
+    theme === "light"
+      ? (root.dataset.theme = "dark")
+      : (root.dataset.theme = "light");
+
+    localStorage.setItem("theme", root.dataset.theme);
+  };
+
   return (
     <div className={styles.navbar}>
       <Link to="/">
@@ -15,7 +26,7 @@ const Navbar = () => {
       </Link>
       <div className={styles.content}>
         <div className={styles.themeToggleBox}>
-          <button className={styles.themeToggleButton}>
+          <button className={styles.themeToggleButton} onClick={toggleTheme}>
             <MoonIcon className={styles.themeToggleIcon} />
           </button>
         </div>
