@@ -6,7 +6,7 @@ import data from "../../data/data.json";
 import styles from "./HomePage.module.scss";
 
 const HomePage = () => {
-  const [invoices, setInvoices] = useState(data);
+  const [invoices] = useState(data);
   return (
     <>
       <div className={styles.header}>
