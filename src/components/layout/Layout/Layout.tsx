@@ -1,4 +1,5 @@
 import Navbar from "../Navbar/Navbar";
+import Container from "../../Container/Container";
 import styles from "./Layout.module.scss";
 
 interface LayoutProps {
@@ -9,7 +10,9 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <div className={styles.layout}>
       <Navbar />
-      <main className={styles.main}>{children}</main>
+      <main className={styles.main}>
+        <Container>{children}</Container>
+      </main>
     </div>
   );
 };

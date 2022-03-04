@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerInfoText {
+  margin-top: var(--space-1);
+}
+
+.headerActionsBox {
+  display: flex;
+}

@@ -1,0 +1,12 @@
+.text {
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-body);
+  letter-spacing: var(--letter-spacing-body);
+}
+
+.small {
+  font-size: var(--font-size-body--small);
+  line-height: var(--line-height-body--small);
+  letter-spacing: var(--letter-spacing-body--small);
+}
