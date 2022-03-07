@@ -139,7 +139,7 @@
 .profileImage {
   width: 3.2rem;
   height: 3.2rem;
-  border-radius: var(--border-radius-profile-image);
+  border-radius: var(--border-radius-round);
 
   @include mq(desktop) {
     width: 4rem;

@@ -22,10 +22,10 @@
   font-size: var(--font-size-h3);
   line-height: var(--line-height-h3);
   letter-spacing: var(--letter-spacing-h3);
-}
 
-.h3--small {
-  font-size: var(--font-size-h3--small);
-  line-height: var(--line-height-h3--small);
-  letter-spacing: var(--letter-spacing-h3--small);
+  &--small {
+    font-size: var(--font-size-h3--small);
+    line-height: var(--line-height-h3--small);
+    letter-spacing: var(--letter-spacing-h3--small);
+  }
 }

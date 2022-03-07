@@ -1,0 +1,76 @@
+.invoiceCard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: var(--space-6);
+  background-color: var(--color-main-component-bg);
+  padding: var(--space-6);
+
+  border-radius: var(--border-radius-main-component);
+
+  & > *:nth-child(odd) {
+    justify-self: start;
+  }
+
+  & > *:nth-child(even) {
+    justify-self: end;
+  }
+}
+
+.accentText {
+  color: var(--color-label-text);
+}
+
+.totalText {
+  font-size: 1.6rem;
+  color: var(--color-heading);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-h3);
+  letter-spacing: var(--letter-spacing-h3);
+  margin-top: var(--space-2);
+}
+
+.statusBox {
+  width: 10.4rem;
+  height: 4rem;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-h3--small);
+  font-weight: var(--font-weight-bold);
+  border-radius: var(--border-radius-status-box);
+
+  &--pending {
+    background-color: var(--color-pending-bg);
+    color: var(--color-pending-text);
+  }
+
+  &--paid {
+    background-color: var(--color-success-bg);
+    color: var(--color-success-text);
+  }
+
+  &--draft {
+    background-color: var(--color-draft-bg);
+    color: var(--color-draft-text);
+  }
+}
+
+.statusIcon {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: var(--border-radius-round);
+  margin-right: var(--space-2);
+
+  &--pending {
+    background-color: var(--color-pending-text);
+  }
+
+  &--paid {
+    background-color: var(--color-success-text);
+  }
+
+  &--draft {
+    background-color: var(--color-draft-text);
+  }
+}

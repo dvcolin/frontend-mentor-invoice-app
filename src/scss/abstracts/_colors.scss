@@ -10,6 +10,7 @@ $white: #ffffff;
 $ghostWhite: #f8f8fb;
 $ghostWhite-2: #f9fafe;
 $charcoal: #373b53;
+$charcoal--light: rgba($charcoal, 0.0571);
 $coolGrey: #888eb0;
 $ube: #7e88c3;
 $chineseBlack: #0c0e16;
@@ -17,6 +18,7 @@ $eerieBlack: #141625;
 $yankeesBlue: #1e2139;
 $yankeesBlue-2: #252945;
 $lavenderWeb: #dfe3fa;
+$lavenderWeb--light: rgba($lavenderWeb, 0.0571);
 $independence: #494e6e;
 
 $main-colors: (
@@ -47,6 +49,8 @@ $light-theme-colors: (
   label-text: $ube,
   main-component-bg: $white,
   secondary-component-bg: $charcoal,
+  draft-bg: $charcoal--light,
+  draft-text: $charcoal,
   input-border: $lavenderWeb,
   input-border--active: $violetsAreBlue--light,
   button-3-bg: $ghostWhite-2,
@@ -64,6 +68,8 @@ $dark-theme-colors: (
   label-text: $lavenderWeb,
   main-component-bg: $yankeesBlue,
   secondary-component-bg: $chineseBlack,
+  draft-bg: $lavenderWeb--light,
+  draft-text: $lavenderWeb,
   input-border: $yankeesBlue-2,
   input-border--active: $yankeesBlue-2,
   button-3-bg: $yankeesBlue-2,

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Heading from "../../components/Heading/Heading";
 import Text from "../../components/Text/Text";
 import Button from "../../components/Button/Button";
+import InvoiceList from "../../components/InvoiceList/InvoiceList";
 import data from "../../data/data.json";
 import styles from "./HomePage.module.scss";
 
@@ -20,6 +21,7 @@ const HomePage = () => {
           <Button variant="1">New</Button>
         </div>
       </div>
+      <InvoiceList data={invoices} />
     </>
   );
 };
