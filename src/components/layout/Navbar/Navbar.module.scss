@@ -1,9 +1,6 @@
 @use "../../../scss/abstracts" as *;
 
 .navbar {
-  position: sticky;
-  top: var(--space-0);
-  left: var(--space-0);
   display: flex;
   justify-content: space-between;
   align-items: center;

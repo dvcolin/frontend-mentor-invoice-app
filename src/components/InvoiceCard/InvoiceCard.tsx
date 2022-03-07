@@ -19,7 +19,7 @@ const InvoiceCard = ({ data }: InvoiceCardProps) => {
         <span className={styles.accentText}>#</span>
         {id}
       </Heading>
-      <Text>{clientName}</Text>
+      <Text className={styles.clientText}>{clientName}</Text>
       <div>
         <Text>
           Due <span className={styles.accentText}>{formattedDate}</span>
