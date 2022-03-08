@@ -45,6 +45,11 @@
     --border-radius-#{$key}: #{$value};
   }
 
+  // BOX SHADOWS
+  @each $key, $value in $box-shadows {
+    --box-shadow-#{$key}: #{$value};
+  }
+
   // MAIN COLORS
   @each $key, $value in $main-colors {
     --color-#{$key}: #{$value};

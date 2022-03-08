@@ -1,0 +1,5 @@
+@use "./colors" as *;
+
+$box-shadows: (
+  card: 0 1rem 1rem -1rem rgba($liberty, 0.1),
+);

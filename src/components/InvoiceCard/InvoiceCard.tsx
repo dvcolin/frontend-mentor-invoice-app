@@ -1,8 +1,9 @@
-import { InvoiceType } from "../../types";
 import Heading from "../Heading/Heading";
 import Text from "../Text/Text";
+import { ReactComponent as RightArrow } from "../../assets/icon-arrow-right.svg";
 import styles from "./InvoiceCard.module.scss";
 import { formatDate, formatCurrency } from "../../util";
+import { InvoiceType } from "../../types";
 
 interface InvoiceCardProps {
   data: InvoiceType;
@@ -19,18 +20,30 @@ const InvoiceCard = ({ data }: InvoiceCardProps) => {
         <span className={styles.accentText}>#</span>
         {id}
       </Heading>
+      <Text className={styles.dateTextTablet}>
+        Due <span className={styles.accentText}>{formattedDate}</span>
+      </Text>
       <Text className={styles.clientText}>{clientName}</Text>
-      <div>
+
+      <div className={styles.dateAndTotalMobile}>
         <Text>
           Due <span className={styles.accentText}>{formattedDate}</span>
         </Text>
         <Text className={styles.totalText}>{formattedTotal}</Text>
       </div>
+
+      <Text className={`${styles.totalText} ${styles.totalTextTablet}`}>
+        {formattedTotal}
+      </Text>
+
       <div className={`${styles.statusBox} ${styles[`statusBox--${status}`]}`}>
         <span
           className={`${styles.statusIcon} ${styles[`statusIcon--${status}`]}`}
         />
         <span>{statusText}</span>
+      </div>
+      <div className={styles.iconBox}>
+        <RightArrow />
       </div>
     </div>
   );

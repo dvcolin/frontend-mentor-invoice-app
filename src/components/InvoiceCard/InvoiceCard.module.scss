@@ -1,18 +1,24 @@
+@use "../../scss/abstracts" as *;
+
 .invoiceCard {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: var(--space-6);
   background-color: var(--color-main-component-bg);
   padding: var(--space-6);
-
   border-radius: var(--border-radius-main-component);
+  border: 0.1rem solid transparent;
+  box-shadow: var(--box-shadow-card);
+  transition: border 100ms linear;
+  cursor: pointer;
 
-  & > *:nth-child(odd) {
-    justify-self: start;
+  &:hover {
+    border-color: var(--color-primary);
   }
 
-  & > *:nth-child(even) {
-    justify-self: end;
+  @include mq(tablet) {
+    grid-template-columns: repeat(5, minmax(min-content, 1fr)) auto;
+    align-items: center;
   }
 }
 
@@ -22,6 +28,19 @@
 
 .clientText {
   color: var(--color-client-text);
+  justify-self: right;
+
+  @include mq(tablet) {
+    justify-self: center;
+  }
+}
+
+.dateAndTotalMobile {
+  display: block;
+
+  @include mq(tablet) {
+    display: none;
+  }
 }
 
 .totalText {
@@ -31,6 +50,10 @@
   line-height: var(--line-height-h3);
   letter-spacing: var(--letter-spacing-h3);
   margin-top: var(--space-2);
+
+  @include mq(tablet) {
+    justify-self: center;
+  }
 }
 
 .statusBox {
@@ -43,6 +66,7 @@
   font-size: var(--font-size-h3--small);
   font-weight: var(--font-weight-bold);
   border-radius: var(--border-radius-status-box);
+  justify-self: right;
 
   &--pending {
     background-color: var(--color-pending-bg);
@@ -76,5 +100,29 @@
 
   &--draft {
     background-color: var(--color-draft-text);
+  }
+}
+
+.iconBox {
+  display: none;
+  @include mq(tablet) {
+    display: block;
+    padding-left: var(--space-5);
+  }
+}
+
+.dateTextTablet {
+  display: none;
+
+  @include mq(tablet) {
+    display: block;
+  }
+}
+
+.totalTextTablet {
+  display: none;
+
+  @include mq(tablet) {
+    display: block;
   }
 }
