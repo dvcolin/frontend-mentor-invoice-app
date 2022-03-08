@@ -1,7 +1,30 @@
 .invoiceList {
+  display: flex;
+  flex-direction: column;
   margin-top: var(--space-8);
 
   & > div:not(:last-child) {
     margin-bottom: var(--space-4);
   }
+}
+
+.noInvoicesBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: var(--space-0) auto;
+}
+
+.noInvoicesHeading {
+  text-align: center;
+  margin-top: var(--space-10);
+}
+
+.noInvoicesText {
+  text-align: center;
+  margin-top: var(--space-6);
 }
